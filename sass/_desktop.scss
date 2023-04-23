@@ -1,0 +1,116 @@
+@media only screen and (min-width: 851px) and (max-width: 1440px){ 
+
+
+    .icon-menu { display: none;}
+    .menu-links-deskto { display: flex; }
+    body { 
+    
+display: grid;
+grid-template-columns: auto;
+grid-template-rows: 150px , repeat(2,auto);
+    grid-template-areas: 'menu' 
+                         'product' 
+                          'description'
+                         'footer' 'footer' ;
+    
+                  overflow-x:hidden;
+           gap: 80px;  
+           padding:0 150px;
+    }
+    
+
+  
+    .header { 
+
+        grid-area: menu;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px;
+   
+        
+      .menu-links-desktop { display: flex; align-items: center; gap: 20px; a { color: $dark-grayish-blue;}}  
+        .flex-row { display: flex;
+            justify-content: flex-end;
+            width: 30%;
+            gap: 50px;}
+    }
+
+    .product-sliders { 
+
+        grid-area: product;
+        width: 50%;
+        grid-column: 1/2;
+
+        img { border-radius: 20px;}
+        
+        }
+
+        .container-info-product { 
+ 
+            grid-area: description;
+           width: 50%;
+           h1 {font-size: 42px;}
+           h5 {color: $orange;}
+           .info-product { 
+            display: flex;
+            flex-direction: column;
+            gap: 50px
+            ;
+        }
+         
+
+} 
+
+
+.container { 
+
+
+display: flex;
+align-items: center;
+justify-content: stretch;
+gap: 50px;
+}
+.price-container { 
+
+    display: flex;
+    justify-content: flex-start;
+    align-items:flex-start;
+    flex-wrap: wrap;
+    width: 40%;
+ div,p,div {padding: 3px;}
+    
+    div { 
+        display: flex;
+        width: 100%;
+        align-items: center;
+     
+       
+    }
+
+    
+    }
+    .price-dto { 
+
+        background-color: $pale-orange;
+        color: $orange;
+    
+    }   
+
+    .btn-flex {
+
+display: flex;
+width: 100%;
+justify-content: space-around;
+gap: 20px
+;
+
+
+
+.btn-quantity { width: 100%; ; input { width: 100%;}}
+.add-cart { width: 100%;  button { width: 100%; flex-grow: 1; }}    
+  
+}
+
+}
