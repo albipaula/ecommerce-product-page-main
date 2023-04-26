@@ -9,13 +9,13 @@ display: grid;
 grid-template-columns: auto;
 grid-template-rows: 150px , repeat(2,auto);
     grid-template-areas: 'menu' 
-                         'product' 
-                          'description'
-                         'footer' 'footer' ;
+                        'product' 
+                        'description'
+                        'footer' 'footer' ;
     
-                  overflow-x:hidden;
-           gap: 80px;  
-           padding:0 150px;
+overflow-x:hidden;
+gap: 50px;  
+padding:0 150px;
     }
     
 
@@ -24,6 +24,7 @@ grid-template-rows: 150px , repeat(2,auto);
 
         grid-area: menu;
         width: 100%;
+        
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -37,41 +38,58 @@ grid-template-rows: 150px , repeat(2,auto);
             gap: 50px;}
     }
 
-    .product-sliders { 
-
-        grid-area: product;
-        width: 50%;
-        grid-column: 1/2;
-
-        img { border-radius: 20px;}
-        
-        }
-
-        .container-info-product { 
- 
-            grid-area: description;
-           width: 50%;
-           h1 {font-size: 42px;}
-           h5 {color: $orange;}
-           .info-product { 
-            display: flex;
-            flex-direction: column;
-            gap: 50px
-            ;
-        }
-         
-
-} 
+   
 
 
 .container { 
 
 
 display: flex;
-align-items: center;
+align-items: stretch;
 justify-content: stretch;
-gap: 50px;
+width: 100%;height: auto;
+gap: 10px;
 }
+
+
+.product-sliders { 
+
+    grid-area: product;
+    img { border-radius: 20px; }
+    display: grid; 
+    width: 80%;     
+    gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto 200px; 
+
+.column1 {  grid-column:1/6; grid-row: 1/2; } 
+.column2 { grid-column:1/2 ; grid-row: 2/4; } 
+.column3 { grid-column:2/3 ; grid-row: 2/4; } 
+.column4 { grid-column:3/4 ; grid-row: 2/4; }
+.column5 { grid-column:4/5 ; grid-row: 2/4; }
+    
+    }
+
+    .container-info-product { 
+
+    grid-area: description;
+    width: 100%;
+        height: auto;
+    h1 {font-size: 42px;}
+    h5 {margin-top: 50px;}
+    .info-product { 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+        gap: 20px;
+        
+    }
+     
+
+} 
+
+
 .price-container { 
 
     display: flex;

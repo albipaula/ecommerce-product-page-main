@@ -57,5 +57,12 @@ input {
 
 }
 
+.container-info-product { 
+
+
+    h5 {color: $orange; }
+    .product-text {color: $grayish-blue;}
+}
+
 .attribution { grid-area: footer; font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }

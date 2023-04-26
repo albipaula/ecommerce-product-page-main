@@ -2,6 +2,7 @@
     
 
     .menu-links-desktop { display: none;}
+    hr {display: none;}
     body { 
         font-family: 'Kumbh Sans', sans-serif;
     display: grid;
@@ -38,6 +39,7 @@
 
 grid-area: product;
 
+.column2,.column3,.column4,.column5 { display: none;}
 
 
 }
@@ -51,10 +53,6 @@ flex-direction: column;
 gap: 12px;
 justify-content: center;
 align-items: center;
-
-h5 {color: $orange;}
-
-
 
 
 .price-container { 
